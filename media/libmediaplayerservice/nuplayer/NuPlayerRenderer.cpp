@@ -2155,4 +2155,8 @@ void NuPlayer::Renderer::onChangeAudioFormat(
     notify->post();
 }
 
+bool NuPlayer::Renderer::isVideoPrerollCompleted() const {
+    return mVideoSampleReceived;
+}
+
 }  // namespace android
