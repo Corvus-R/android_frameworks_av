@@ -19,15 +19,8 @@
 cc_library_shared {
     name: "libcameraservice",
 
-    product_variables: {
-        corvus: {
-            target_camera_needs_client_info: {
-                cppflags: ["-DTARGET_NEEDS_CLIENT_INFO"],
-            },
-        },
-    },
-
     // Camera service source
+
     srcs: [
         "CameraService.cpp",
         "CameraFlashlight.cpp",
