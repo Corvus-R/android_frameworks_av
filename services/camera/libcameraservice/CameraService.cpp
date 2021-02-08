@@ -2929,7 +2929,7 @@ String16 CameraService::BasicClient::getPackageName() const {
 
 bool CameraService::BasicClient::isFaceUnlockPackage() const {
     std::string cpn = String8(mClientPackageName).string();
-    return cpn.compare("com.android.faceunlock") == 0;
+    return cpn.compare("org.pixelexperience.faceunlock") == 0;
 }
 
 int CameraService::BasicClient::getClientPid() const {
