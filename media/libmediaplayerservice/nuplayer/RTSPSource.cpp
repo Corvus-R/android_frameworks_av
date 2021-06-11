@@ -145,7 +145,7 @@ void NuPlayer::RTSPSource::stop() {
         return;
     }
 
-    if (mHandler != NULL && mHandler->getARTSPConnection() != NULL) {
+    if (mHandler != NULL) {
         // Close socket before posting message to RTSPSource message handler.
         close(mHandler->getARTSPConnection()->getSocket());
     } else {
